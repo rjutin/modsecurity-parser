@@ -36,7 +36,8 @@ modsec_message_id_pattern = r'(?<=\[id\s\").*?(?=\"\])'
 modsec_message_severity_pattern = r'(?<=\[severity\s\").*?(?=\"\])'
 modsec_message_maturity_pattern = r'(?<=\[maturity\s\").*?(?=\"\])'
 modsec_message_accuracy_pattern = r'(?<=\[accuracy\s\").*?(?=\"\])'
-modsec_message_message_pattern = r'(?<=Message:).*?(?=\.\ \[)'
+modsec_message_message_pattern = r'(?<=Warning:).*?(?=\.\ \[)'
+#RAA Include Message>Warning
 modsec_v3_message_phase_pattern = r'(?<=\(phase).*?(?=\))'
 #modsec_v3_message_phase_pattern = r'(?:\(phase).*?(?:\))'           # (phase 2)
 #modsec_v3_message_phase_pattern = r'(?:\(phase).*?(?=\))'
