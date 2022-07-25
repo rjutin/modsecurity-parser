@@ -1,0 +1,19 @@
+#Error
+inputFileName : /var/log/modsecurity/modsec_audit.log
+---------- modsec_audit events processed: 27    ----------
+---------- modsec_audit events skipped by INCLUDED/EXCLUDED options or INVALID : 0 ----------
+Traceback (most recent call last):
+  File "modsecurity-parser.py", line 689, in <module>
+    outputWithGraphs = modsecViewGraphs(modsec_entries)
+  File "modsecurity-parser.py", line 437, in modsecViewGraphs
+    plt.subplot(ax21)
+  File "/usr/local/lib/python3.8/dist-packages/matplotlib/pyplot.py", line 1289, in subplot
+    key = SubplotSpec._from_subplot_args(fig, args)
+  File "/usr/local/lib/python3.8/dist-packages/matplotlib/gridspec.py", line 582, in _from_subplot_args
+    raise ValueError(
+ValueError: Single argument to subplot must be a three-digit integer, not <AxesSubplot:>
+
+#Solution
+-pip uninstall matplotlib
+-pip install matplotlib==3.3.2
+
