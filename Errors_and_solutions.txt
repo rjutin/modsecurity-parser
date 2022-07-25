@@ -17,3 +17,5 @@ ValueError: Single argument to subplot must be a three-digit integer, not <AxesS
 -pip uninstall matplotlib
 -pip install matplotlib==3.3.2
 
+#installation
+
